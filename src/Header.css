@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rampart+One&display=swap");
+
+.container {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  color: white;
+  margin-left: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-greeting,
+.info-name {
+  color: #e40c0c;
+  /* text-shadow: 1px 0px 8px rgb(240, 64, 11); */
+  font-family: "Rampart One";
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: 20rem;
+}
+
+.info-name {
+  margin-top: -2rem;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30rem;
+  height: 5rem;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
+
+.description-info,
+.description-info-left {
+  height: 3rem;
+  width: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  border: 0.1rem solid white;
+  border-radius: 2.5rem;
+}
+
+
+.description-info-left {
+  margin-right: 3rem;
+}
+
+.description-info:hover,
+.description-info-left:hover {
+  background-color: #dde5b6;
+  color: black;
+}
+
+.arrow {
+  margin-left: 50rem;
+  position: absolute;
+  bottom: 2.5rem;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .container {
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+  }
+    h1 {
+      position: inherit;
+      font-size: 5rem;
+    }
+
+    .description {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .description-info {
+      height: 2rem;
+    }
+
+    .description-info-left {
+      height: 2rem;
+      margin-left: 3rem;
+      margin-top: 2rem;
+    }
+
+    .arrow {
+      display: block;
+      position: inherit;
+    }
+}
